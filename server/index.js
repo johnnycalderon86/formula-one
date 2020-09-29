@@ -2,6 +2,7 @@ const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose')
+const cors = require('cors');
 require('dotenv').config()
 
 const dbName = process.env.DB_NAME
@@ -9,6 +10,8 @@ const dbPassword = process.env.DB_PASSWORD
 const dbUser = process.env.DB_USER
 
 const app = express();
+//allow cross-origin
+app.use(cors())
 
 //connecting to mongoDB server
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.or615.mongodb.net/${dbName}?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -26,6 +29,6 @@ app.use('/graphql-f1', graphqlHTTP({
 
 
 app.listen(4001, () => {
-    console.log("Listening for request on port 4000");
+    console.log("Listening for request on port 4001");
 })
 
