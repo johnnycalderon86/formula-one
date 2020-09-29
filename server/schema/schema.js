@@ -12,11 +12,11 @@ const {
 
 } = graphql
 //dummy data for
-const circuits = [
-    { name: 'Spa-FrancoChamps', city: 'Stavelot', id: '1', fastestLap: "1:46.286", fastestLapDriver: "Valtterie Bottas", length: "7.004 km", country: "Belgium", fastestLapYear: "2018", fastestLapTeam: "Mercedes", fastestLapCar: "AMG F1 W09 EQ Power+" },
-    { name: "Circuit de Monaco", city: 'Monte-Carlo', id: '2', fastestLap: "1:14.260", fastestLapDriver: "Max Verstappen", length: "3.340 km", country: "Monaco", fastestLapYear: "2018", fastestLapTeam: "Red Bull Racing", fastestLapCar: "RB14" },
-    { name: 'Autódromo José Carlos Pace', city: 'São Paulo', id: '3', fastestLap: "1:10.540 ", fastestLapDriver: "Valtterie Bottas", length: "4.309 km", country: "Brazil", fastestLapYear: "2018", fastestLapTeam: "Mercedes", fastestLapCar: "AMG F1 W09 EQ Power+" },
-]
+// const circuits = [
+//     { name: 'Spa-FrancoChamps', city: 'Stavelot', id: '1', fastestLap: "1:46.286", fastestLapDriver: "Valtterie Bottas", length: "7.004 km", country: "Belgium", fastestLapYear: "2018", fastestLapTeam: "Mercedes", fastestLapCar: "AMG F1 W09 EQ Power+" },
+//     { name: "Circuit de Monaco", city: 'Monte-Carlo', id: '2', fastestLap: "1:14.260", fastestLapDriver: "Max Verstappen", length: "3.340 km", country: "Monaco", fastestLapYear: "2018", fastestLapTeam: "Red Bull Racing", fastestLapCar: "RB14" },
+//     { name: 'Autódromo José Carlos Pace', city: 'São Paulo', id: '3', fastestLap: "1:10.540 ", fastestLapDriver: "Valtterie Bottas", length: "4.309 km", country: "Brazil", fastestLapYear: "2018", fastestLapTeam: "Mercedes", fastestLapCar: "AMG F1 W09 EQ Power+" },
+// ]
 
 const CircuitType = new GraphQLObjectType({
     name: 'Circuit',
@@ -44,13 +44,13 @@ const RootQuery = new GraphQLObjectType({
             args: { id: { type: GraphQLID } },
             resolve(parent, args) {
                 //code to get data from db/other sourse
-                return _.find(circuits, { id: args.id });
+                return Circuit.findById(args.id)
             }
         },
         circuits: {
             type: GraphQLList(CircuitType),
             resolve(parent, args) {
-                return circuits
+                return Circuit.find({})
             }
 
         }
