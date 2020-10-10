@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f2e08e3.chunk.css",
+    "main.js": "/static/js/main.c0f9864c.chunk.js",
+    "main.js.map": "/static/js/main.c0f9864c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.331de462.js",
+    "runtime-main.js.map": "/static/js/runtime-main.331de462.js.map",
+    "static/js/2.ba216f40.chunk.js": "/static/js/2.ba216f40.chunk.js",
+    "static/js/2.ba216f40.chunk.js.map": "/static/js/2.ba216f40.chunk.js.map",
+    "static/js/3.3cf82750.chunk.js": "/static/js/3.3cf82750.chunk.js",
+    "static/js/3.3cf82750.chunk.js.map": "/static/js/3.3cf82750.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5e69229b58acf27d9cce2f8cd42602aa.js": "/precache-manifest.5e69229b58acf27d9cce2f8cd42602aa.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2f2e08e3.chunk.css.map": "/static/css/main.2f2e08e3.chunk.css.map",
+    "static/js/2.ba216f40.chunk.js.LICENSE.txt": "/static/js/2.ba216f40.chunk.js.LICENSE.txt",
+    "static/js/3.3cf82750.chunk.js.LICENSE.txt": "/static/js/3.3cf82750.chunk.js.LICENSE.txt",
+    "static/media/f1pass.mp3": "/static/media/f1pass.4f886ffc.mp3",
+    "static/media/StartPage.css": "/static/media/ferrari-f1-background-hd-1920x1080-381062.3498600f.jpg",
+    "static/media/Circuits.css": "/static/media/lauda.f9c0c90a.jpeg",
+    "static/media/Home.css": "/static/media/sennamonaco.19716783.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.331de462.js",
+    "static/js/2.ba216f40.chunk.js",
+    "static/css/main.2f2e08e3.chunk.css",
+    "static/js/main.c0f9864c.chunk.js"
+  ]
+}
