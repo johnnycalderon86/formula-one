@@ -1,0 +1,60 @@
+.Home-div {
+  background: rgb(250, 247, 247);
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/sennamonaco.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Home-nav {
+  width: 100vw;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  /* font-family: "Keania One", cursive; */
+  text-transform: uppercase;
+  font-family: "Mina", sans-serif;
+  /* font-family: "Molle", cursive; */
+  /* font-family: "Plaster", cursive; */
+  font-family: "Saira Stencil One", cursive;
+  /* font-family: "Sonsie One", cursive; */
+  padding: 1em;
+}
+
+.Home-Link {
+  color: white;
+  margin-left: 1em;
+}
+
+@media (max-width: 1000px) {
+  .Home-nav {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .Home-nav {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Home-nav {
+      height: 100vh;
+     
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+      /* align-items: center;  */
+    justify-content: center;
+    
+    padding: 0;
+     /* justify-items: center; */
+    /* align-content: center;   */
+  }
+  .Home-Link{
+      margin-bottom:0.6em;
+  }
+}

@@ -13,6 +13,10 @@ const circuitSchema = new Schema({
     fastestLapCar: String,
     fastestLapYear: String,
     fastestLapTeam: String,
+    trackImage: String,
+    weekendDate:String,
+    month: String,
+
 });
 
 module.exports = mongoose.model('Circuit', circuitSchema)

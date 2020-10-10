@@ -1,15 +1,22 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Anton', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgb(250, 247, 247);
+  background: url("./images/ferrari-f1-background-hd-1920x1080-381062.jpg");
+  /* background-position: center top; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 600px) {
+  body {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
 }
